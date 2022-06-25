@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fontes-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Desafio Sidebar</title>
+  </head>
+  <body>
+    <main>
+      <aside id="sidebar"  class="active">
+      <header class="header">
+        <a class="logo" href="#"><img src="./images/logo.svg" alt="Logo da página"></a>
+        <button onclick="openMenu()">
+          <img src="./images/menu.svg" alt="icone de menu">
+        </button>
+      </header>
+
+      <div class="search">
+        <button>
+          <img src="./images/search.svg" alt="icone de pesquisa">
+          <p>Buscar</p>
+        </button>
+      </div>
+
+      <div class="content">
+        <a href="">
+          <img src="./images/grid.svg" alt="icone grid">
+          <p>Dashboad</p>
+        </a>
+        <a href="">
+          <img src="./images/pet.svg" alt="icone de pet">
+          <p>Pets</p>
+        </a>
+        <a href="">
+          <img src="./images/user.svg" alt="icone de usuário">
+          <p>Clientes</p>
+        </a>
+        <a href="">
+          <img src="./images/vet.svg" alt="icone vet">
+          <p>Vets</p>
+        </a>
+        <a href="">
+          <img src="./images/settings.svg" alt="icone de configuraçõs">
+          <p>Ajustes</p>
+        </a>
+      </div>
+      
+      <footer class="footer">
+        <img class="avatar" src="./images/avatar.svg" alt="imagem do usuário">
+        <span>
+          <p>Eleanos Pena</p>
+          <p>Veterinária</p>
+        </span>
+        <button  onclick="openMenu()">
+          <img src="./images/log-out.svg" alt="icone de fechar">
+        </button>
+      </footer>
+    </aside>
+
+    <section>
+      <h1>Dashboad</h1>
+    </section>
+    </main>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

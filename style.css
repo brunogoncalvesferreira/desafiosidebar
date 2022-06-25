@@ -1,0 +1,192 @@
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #4d94c0;
+  --light-green: #91dbee;
+  --light-grey: #dce4e3;
+  --text-color: #084236;
+
+  font-size: 62.5%; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem; 
+  background: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a{
+  display: flex;
+  align-items: center;
+  gap: 0.8125rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+main{
+  display: flex;
+}
+
+h1{
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+#sidebar{
+  width: 25rem;
+  height: 100vh;
+
+  background: var(--green);
+
+  transition: all 0.4s ease;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  gap: 7em;
+  padding: 2.6rem 2.7rem;
+}
+
+.header .logo{
+  width: 6.4rem;
+  height: 2.512rem;
+
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.search{
+  width: 23rem;
+  height: 4.5rem;
+
+  background: var(--light-green);
+
+  border-radius: 12px;
+
+  padding: 0.875rem ;
+
+  display: flex;
+  align-items: center;
+
+  margin-inline: 0.875rem;
+
+  transition: all 0.4s ease;
+}
+
+.search p{
+  color: var(--text-color);
+}
+.search button{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  margin-top: 1.25rem;
+  margin-left: 1.6825rem; 
+}
+
+.content p{
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.content a{
+ transition: all 0.5s ease;
+ color: var(--text-color);
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 0.56rem;
+
+  background: var(--light-green);
+
+  width:  25rem;
+  padding: 0.5rem 1.5rem;
+
+  transition: all 0.4s ease;
+}
+.footer span{
+  margin-inline: 0.9rem 4.1rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
+}
+
+#sidebar.active{
+  width: 7.8rem;
+
+  transition: all 0.4s ease;
+}
+
+#sidebar.active .logo{
+  opacity: 0;
+}
+
+#sidebar.active .header button, #sidebar.active .footer button{
+  position: absolute;
+}
+
+#sidebar.active .search{
+  width: 5rem;
+  height: 5rem;
+
+  margin: 0 auto;
+  transition: all 0.4s ease;
+
+  display: flex;
+  align-items: center;
+}
+
+#sidebar.active .search img{
+  margin-left: 0.5rem;
+}
+
+#sidebar.active .search p{
+  opacity: 0;
+}
+
+#sidebar.active .content p{
+  opacity: 0;
+}
+
+#sidebar.active  .content a{ 
+margin-inline: 1rem;
+}
+
+#sidebar.active .footer{
+  width: 7.8rem;
+  transition: all 0.4s ease;
+}
+
+#sidebar.active .footer button{
+ margin-inline: 1rem;
+}
+
+#sidebar.active .footer .avatar, #sidebar.active .footer span {
+  opacity: 0;
+}

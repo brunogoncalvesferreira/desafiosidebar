@@ -1,5 +1,5 @@
  <h1>Desafio: Sidebar</h1>
-    <p>Desafio da Rocketseat feito, criação de uma Sidebar. Quando o usuário clicar no botão menu, o sidebar muda seu estado para "Aberto", é mostra os ícones e textos, "fechando" mostra somente os ícones.</p>
+    <p>Desafio da Rocketseat feito! Criação de uma Sidebar. Quando o usuário clicar no botão menu, o sidebar muda seu estado para "Aberto", é mostra os ícones e textos, "fechando" mostra somente os ícones.</p>
     <hr>
     <h1>🚀 Techs</h1>
     <li>HTML</li>
